@@ -12,7 +12,7 @@
   </header> 
   
   <section class="slide cover h" id="Cover">
-    <style>
+    <style scoped>
       #Cover {
         background: #FFF;
       }
@@ -64,9 +64,9 @@
 
       <ul>
         <li class="next">doctype</li>
-        <li class="next">Чуть меньше <em>30</em> новых элементов</li>
+        <li class="next">Около <em>30</em> новых элементов</li>
         <li class="next">Несколько новых атрибутов</li>
-        <li class="class">Изменение назначения некоторых элементов и атрибутов</li>
+        <li class="next">Изменение назначения «старых» элементов и атрибутов</li>
         <li class="next">Внедрение <em>MathML</em> и <em>SVG</em></li>
         <li class="next">Новые <em>API</em> и изменения в <em>DOM</em> API</li>
         <li class="next">Стандартизация обработки ошибок</li>
@@ -92,8 +92,8 @@
 <code>    &lt;title>HTML5&lt;/title></code>
 <code>  &lt;/head></code>
 <code>  &lt;body></code>
-<code>  &lt;body></code>
-<code>&lt;html></code>
+<code>  &lt;/body></code>
+<code>&lt;/html></code>
       </pre>
     </div>
   </section>
@@ -103,7 +103,7 @@
       <h2>xHTML 5</h2>      
 
       <ul>
-        <li class="next">well-formed KXML</li>
+        <li class="next">well-formed XML</li>
         <li class="next"><strong>content-type</strong>: application/xml</li>
       </ul>
     </div>
@@ -133,17 +133,27 @@
 
   <section class="slide">
     <div>
-      <h2>Новые элменты</h2>
+      <h2>Новые элементы</h2>
 
-      <p>article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, mark, meter, nav, output, progress, rp, rt, ruby, section, source, summary, time, video, wbr</p>
+      <p><span class="next">article,</span> <span class="next">aside,</span> <span class="next">audio,</span>
+        <span class="next">canvas,</span> <span class="next">command,</span> <span class="next">datalist,</span>
+        <span class="next">details,</span> <span class="next">embed,</span> <span class="next">figcaption,</span>
+        <span class="next">figure,</span> <span class="next">footer,</span> <span class="next">header,</span>
+        <span class="next">hgroup,</span> <span class="next">keygen,</span> <span class="next">mark,</span>
+        <span class="next">meter,</span> <span class="next">nav,</span> <span class="next">output,</span>
+        <span class="next">progress,</span> <span class="next">rp,</span> <span class="next">rt,</span>
+        <span class="next">ruby,</span> <span class="next">section,</span> <span class="next">source,</span>
+        <span class="next">summary,</span> <span class="next">time,</span> <span class="next">video,</span>
+        <span class="next">wbr</span></p>
     </div>
   </section>
 
   <section class="slide">
     <div>
-      <h2>«Возвращённые» элменты</h2>
+      <h2>«Возвращённые» элементы</h2>
 
-      <p>b, i, s, small, u</p>
+      <p><span class="next">b,</span> <span class="next">i,</span> <span class="next">s,</span>
+        <span class="next">small,</span> <span class="next">u</span></p>
     </div>
   </section>
 
@@ -151,7 +161,10 @@
     <div>
       <h2>Новые глобальные атрибуты</h2>
 
-      <p>contenteditable, contextmenu, data-*, draggable, dropzone, hidden, role, aria-*, spellcheck, translate</p>
+      <p><span class="next">contenteditable,</span> <span class="next">contextmenu,</span>
+        <span class="next">data-*,</span> <span class="next">draggable,</span> <span class="next">dropzone,</span>
+        <span class="next">hidden,</span> <span class="next">role,</span> <span class="next">aria-*,</span>
+        <span class="next">spellcheck,</span> <span class="next">translate</span></p>
     </div>
   </section>
 
@@ -159,7 +172,11 @@
     <div>
       <h2>Новые типы полей ввода</h2>
 
-      <p>tel, search, url, email, datetime, date, month, week, time, datetime-local, number, range, color</p>
+      <p><span class="next">tel,</span> <span class="next">search,</span> <span class="next">url,</span>
+          <span class="next">email,</span> <span class="next">datetime,</span> <span class="next">date,</span>
+          <span class="next">month,</span> <span class="next">week,</span> <span class="next">time,</span>
+          <span class="next">datetime-local,</span> <span class="next">number,</span>
+          <span class="next">range,</span> <span class="next">color</span></p>
     </div>
   </section>
 
@@ -181,7 +198,8 @@
       <h2>Новые API</h2>
 
       <ul>
-        <li class="next">audio и video</li>
+        <li class="next">Audio</li>
+        <li class="next">Video</li>
         <li class="next">Web Storage</li>
         <li class="next">Contetneditable</li>
         <li class="next">Drag-and-drop</li>
@@ -201,6 +219,48 @@
         <li class="next">File API</li>
         <li class="next">Filesystem API</li>
       </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Audio API</h2>
+
+      <ul class="next">
+        <li>Загрузка медиа-файлов</li>
+        <li>Управление воспроизведением</li>
+        <li>Микширование</li>
+      </ul>
+
+      <p class="next"><a href="http://www.html5rocks.com/en/tutorials/webaudio/intro/" target="_blank">Пример</a></p>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>File API</h2>
+
+      <ul class="next">
+        <li>Мультизагрузка</li>
+        <li>Чтение содержимого файла</li>
+        <li>Отображение прогресса</li>
+      </ul>
+
+      <p class="next"><a href="http://www.html5rocks.com/en/tutorials/file/dndfiles/" target="_blank">Пример</a></p>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Web Workers</h2>
+
+      <ul class="next">
+        <li>Обработка графики на клиенте</li>
+        <li>Математические вычисления</li>
+        <li>Шифрование</li>
+      </ul>
+
+      <p class="next"><a href="http://www.html5rocks.com/en/tutorials/workers/basics/" target="_blank">Пример</a></p>
     </div>
   </section>
 
