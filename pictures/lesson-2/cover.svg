@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="640px" height="480px" viewBox="0 0 640 480" enable-background="new 0 0 640 480" xml:space="preserve">
+<radialGradient id="SVGID_1_" cx="319.5" cy="240" r="283.1256" gradientTransform="matrix(1 0 0 1.4088 0 -98.1092)" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#BF0045"/>
+	<stop  offset="0.1373" style="stop-color:#9C0034"/>
+	<stop  offset="0.2989" style="stop-color:#7B0024"/>
+	<stop  offset="0.4647" style="stop-color:#610017"/>
+	<stop  offset="0.6342" style="stop-color:#4E000E"/>
+	<stop  offset="0.8096" style="stop-color:#430009"/>
+	<stop  offset="1" style="stop-color:#3F0007"/>
+</radialGradient>
+<rect x="-1" fill="url(#SVGID_1_)" width="641" height="480"/>
+<polygon fill="#DADADA" points="265,153 528,153 558.166,240.219 527.839,329 265,329 "/>
+<g>
+	<title>HTML5 Logo Badge</title>
+	<path fill="#E34F26" d="M105.486,347.755L83.834,104.826H322.01l-21.652,242.929l-97.7,27.461"/>
+	<path fill="#EF652A" d="M203.186,354.092l78.688-21.652l18.484-208.074h-97.171"/>
+	<path fill="#EBEBEB" d="M203.186,214.672h-39.608l-2.641-30.63h42.248v-29.574h-0.528h-74.463l0.528,7.922l7.393,82.385h67.069
+		V214.672z M203.186,292.304h-0.528l-33.271-8.978l-2.112-23.765h-15.843h-13.731l3.697,47.001l61.26,16.899h0.528V292.304z"/>
+	<path fill="#FFFFFF" d="M202.658,214.672v30.102h36.967l-3.697,38.552l-33.271,8.978v31.158l61.26-16.899l0.528-5.281l6.865-78.688
+		l1.056-7.922h-8.45H202.658z M202.658,154.468v18.484v11.09l0,0h72.351l0,0l0,0l0.528-6.337l1.584-15.315l0.528-7.922H202.658z"/>
+</g>
+<polygon id="chevron" fill="#9A9A9A" points="414.706,201.956 376.484,221.273 376.484,233.977 414.706,214.66 452.911,233.977 
+	452.911,221.273 "/>
+<g>
+	<polygon id="chevron_1_" fill="#9A9A9A" points="414.706,224.129 376.484,243.447 376.484,256.15 414.706,236.833 452.911,256.15 
+		452.911,243.447 	"/>
+</g>
+<g>
+	<polygon id="chevron_2_" fill="#9A9A9A" points="414.706,246.309 376.484,265.626 376.484,278.329 414.706,259.012 
+		452.911,278.329 452.911,265.626 	"/>
+</g>
+</svg>

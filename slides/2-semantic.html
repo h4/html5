@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Семантика в HTML</title>
+  <meta name="viewport" content="width=792, user-scalable=no">
+  <link rel="stylesheet" href="../shower/themes/bright/styles/screen.css">
+</head>
+<body class="list">
+  <header class="caption">
+    <h1>Семантика HTML 5</h1>
+  </header>
+  
+  <section class="slide cover w" id="Cover">
+    <div>
+      <img src="../pictures/lesson-2/cover.svg" alt="">
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Уровни элементов HTML 4</h2>
+
+      <ul>
+        <li>Блочные</li>
+        <li>Строковые</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Уровни элементов HTML 5</h2>
+
+      <ul>
+        <li class="next">Структурные элементы</li>
+        <li class="next">Элементы группировки контента</li>
+        <li class="next">Текстовый уровень</li>
+        <li class="next">Внедрённое содержимое</li>
+        <li class="next">Ссылки</li>
+        <li class="next">Табличные данные</li>
+        <li class="next">Интерактивные элементы</li>
+        <li class="next">Формы</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Структурные элементы</h2>
+
+      <ul>
+        <li class="next">body</li>
+        <li class="next">article</li>
+        <li class="next">section</li>
+        <li class="next">nav</li>
+        <li class="next">aside</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Структурные элементы</h2>
+
+      <ul>
+        <li class="next">h1…h6</li>
+        <li class="next">hgroup</li>
+        <li class="next">header</li>
+        <li class="next">footer</li>
+        <li class="next">address</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Элементы группировки контента</h2>
+
+      <ul>
+        <li class="next">p</li>
+        <li class="next">hr</li>
+        <li class="next">pre</li>
+        <li class="next">blockquote</li>
+        <li class="next">ol, ul, li</li>
+        <li class="next">dl, dt, dd</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Элементы группировки контента</h2>
+
+      <ul>
+        <li class="next">figure</li>
+        <li class="next">figcaption</li>
+        <li class="next">main</li>
+        <li class="next">div</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Элементы уровня разметки текста</h2>
+
+      <p>
+        <span class="next">a, </span>
+        <span class="next">em, </span>
+        <span class="next">strong, </span>
+        <span class="next">small, </span>
+        <span class="next">s, </span>
+        <span class="next">cite, </span>
+        <span class="next">q, </span>
+        <span class="next">dfn, </span>
+        <span class="next">abbr, </span>
+        <span class="next">data, </span>
+        <span class="next">time, </span>
+        <span class="next">code, </span>
+        <span class="next">var, </span>
+        <span class="next">samp, </span>
+        <span class="next">kbd, </span>
+        <span class="next">sub, </span>
+        <span class="next">sup, </span>
+        <span class="next">i, </span>
+        <span class="next">b, </span>
+        <span class="next">u, </span>
+        <span class="next">mark, </span>
+        <span class="next">ruby, </span>
+        <span class="next">rt, </span>
+        <span class="next">rp, </span>
+        <span class="next">bdi, </span>
+        <span class="next">bdo, </span>
+        <span class="next">span, </span>
+        <span class="next">br, </span>
+        <span class="next">wbr</span>
+      </p>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>header</h2>
+
+      <p>Элемент <code>header</code> представляет собой набор предварительных данных и навигационных средств...
+        Обратите внимание: <strong>предполагается</strong>, что элемент header <strong>должен</strong> содержать заголовок раздела
+        (элементы h1–h6 или hgroup), но это <em>не обязательно</em>. Элемент header может также использоваться для обрамления
+        списка содержимого раздела, формы поиска или любых необходимых логотипов</p>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>header</h2>
+
+      <ul>
+        <li class="next">Заголовок сайта</li>
+        <li class="next">Заголовок статьи</li>
+        <li class="next">Комментарий</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>nav</h2>
+
+      <ul>
+        <li class="next">Панель навигации</li>
+        <li class="next">Может содержать заголовок</li>
+        <li class="next">Может быть несколько на странице</li>
+        <li class="next">Не переусердствуйте</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>footer</h2>
+
+      <p>Элемент <code>footer</code> используется для создания «футера» для расположенного уровнем выше структурного элемента
+        или элемента группировки контента. Элемент footer <em>обычно</em> содержит сведения о соответствующем разделе —
+        информацию об авторе, ссылки на похожие документы, сведения об авторских правах и т. п.</p>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>article</h2>
+
+      <p>Элемент <code>article</code> представляет собой самодостаточный компонент страницы, документа, приложения,
+        сайта — в принципе, автономный и предназначенный для многократного использования и свободного распространения,
+        например, при синдикации. Это может быть публикация на форуме, статья в журнале или газете, запись в блоге,
+        комментарий пользователя, интерактивный виджет и любой другой <em>независимый</em> элемент содержимого.</p>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>article</h2>
+
+      <ul>
+        <li class="next"><strong>Предполагает</strong> наличие заголовка</li>
+        <li class="next">Может быть несколько на странице</li>
+        <li class="next">Может быть вложен в другой article</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>section</h2>
+
+      <p>Элемент <code>section</code> используется либо как способ разделения страницы на несколько тематических
+        областей, либо как способ разделения статьи на разделы.</p>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>aside</h2>
+
+      <p>Элемент <code>aside</code> используется для выделения раздела страницы, который косвенно связан с окружающим
+        контентом, но который должен располагаться отдельно.
+        В типографике такие разделы обычно оформляются в виде врезок. Этот элемент может использоваться для создания
+        типографских эффектов (например, врезок и боковых панелей), для рекламы, для групп элементов
+        <em>&lt;nav&gt;</em> и для другого контента, который должен располагаться отдельно от основного.</p>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <style scoped="scoped">
+        @-webkit-keyframes wave {
+          0% {
+            -webkit-transform: rotate(-12deg);
+          }
+          100% {
+            -webkit-transform: rotate(-6deg);
+          }
+        }
+
+        .active figure {
+          width: 300px;
+          padding: 20px;
+          margin: 0 auto;
+          background: #FFF;
+          border: solid 1px #8D8E90;
+          box-shadow: 0 0 8px #99C;
+          -webkit-animation: wave 2s infinite alternate;
+          -webkit-transform-origin: 50% 50%;
+          -webkit-font-smoothing: subpixel-antialiased;
+        }
+
+        figure img {
+          box-sizing: border-box;
+          max-width: 100%;
+          border: solid 3px;
+          border-color: #CCC #EEE #EEE #CCC;
+        }
+
+        figcaption {
+          font-size: 12px;
+          text-align: center;
+        }
+      </style>
+      <h2>figure и figcaption</h2>
+
+      <figure>
+        <img src="../pictures/lesson-2/cover.svg"/>
+        <figcaption>Логотип семантического HTML 5</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>figure и figcaption</h2>
+
+      <pre>
+<code>&lt;<mark>figure</mark>></code>
+<code>  &lt;img src="../pictures/lesson-2/cover.svg"/></code>
+<code>  &lt;<mark>figcaption</mark>>Логотип семантического HTML 5&lt;/<mark>figcaption</mark>></code>
+<code>&lt;/<mark>figure</mark>></code>
+      </pre>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>aria-*</h2>
+
+      <p>WAI-ARIA (Web Accessibility Initiative’s Accessible Rich Internet Applications) — отдельная спецификация,
+        которая «заполняет дыры» в HTML 5 для повышения доступности приложений и веб-страниц.</p>
+
+      <p><a href="http://science.eduboard.com/introduction-to-wai-aria/">Введение в WAI-ARIA</a></p>
+    </div>
+  </section>
+  
+  <section class="slide">
+    <style scoped="scoped">
+      aside {
+        float: left;
+        margin-right: 90px;
+      }
+    </style>
+    <div>
+      <h2>aria-role</h2>
+
+      <aside><img src="../pictures/lesson-2/pagestructure.gif" alt=""/></aside>
+
+      <pre>
+<code>&lt;header <mark>role</mark>=<mark>banner</mark>&gt;...&lt;/header&gt;</code>
+<code>&lt;aside role=<mark>navigation</mark>&gt;...&lt;/aside&gt;</code>
+<code>&lt;section role=<mark>content</mark>&gt;...&lt;/section&gt;</code>
+      </pre>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Microdata</h2>
+
+      <p>Микроданные (microdata) позволяют добавлять семантику содержимому, не используя дополнительные элементы HTML.</p>
+    </div>
+  </section>
+  
+  <section class="slide">
+    <div>
+      <h2>Microdata</h2>
+
+      <ul>
+        <li>itemscope</li>
+        <li>itemtype</li>
+        <li>itemprop</li>
+        <li>itemref</li>
+        <li>itemid</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <pre>
+<code>&lt;div <mark>itemscope</mark> <mark>itemtype</mark>="<mark>http://schema.org/Organization</mark>"&gt;</code>
+<code>  &lt;span <mark>itemprop</mark>="<mark>name</mark>"&gt;Яндекс&lt;/span&gt;</code>
+<code>  Контакты:</code>
+<code>  &lt;div itemprop="<mark>address</mark>"</code>
+<code>    <mark>itemscope</mark> <mark>itemtype</mark>="<mark>http://schema.org/PostalAddress</mark>"&gt;</code>
+<code>    Адрес:</code>
+<code>    &lt;span itemprop="<mark>streetAddress</mark>"&gt;Льва Толстого, 16&lt;/span&gt;</code>
+<code>    &lt;span itemprop="<mark>addressLocality</mark>"&gt;Москва&lt;/span&gt;,</code>
+<code>  &lt;/div&gt;</code>
+<code>&lt;/div&gt;</code>
+      </pre>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Microdata в Яндексе</h2>
+
+      <p><a href="http://help.yandex.ru/webmaster/schema-org/intro-schema-org.xml">Документация</a></p>
+
+      <ul>
+        <li>Адреса и организации</li>
+        <li>Отзывы об организациях и автомобилях</li>
+        <li>Картинки и видео</li>
+        <li>Рецепты</li>
+        <li>Описания фильмов</li>
+        <li>Аккорды</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Microdata в Гугле</h2>
+
+      <p><a href="https://support.google.com/webmasters/answer/176035?hl=ru">Документация</a></p>
+
+      <ul>
+        <li>Отзывы</li>
+        <li>Люди</li>
+        <li>Товары</li>
+        <li>Компании и организации</li>
+        <li>Рецепты</li>
+        <li>Мероприятия</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="progress"><div></div></div>
+
+  <script src="../shower/shower.min.js"></script>
+</body>
+</html>
