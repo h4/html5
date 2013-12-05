@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Новые элементы и атрибуты</title>
+  <meta name="viewport" content="width=792, user-scalable=no">
+  <link rel="stylesheet" href="../shower/themes/bright/styles/screen.css">
+</head>
+<body class="list">
+  <header class="caption">
+    <h1>Новые элементы и атрибуты</h1>
+  </header>
+  <style scoped="scoped">
+    #Cover {
+      background: #000;
+    }
+
+    #Cover div {
+      left: 0;
+      right: 0;
+      width: auto;
+      margin: 2em;
+      box-sizing: border-box;
+      color: #FFF;
+    }
+  </style>
+  <section class="slide cover h" id="Cover">
+    <div>
+      <h2>Новые элементы и атрибуты</h2>
+      <img src="../pictures/lesson-3/cover.jpg" alt="">
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Изменения в HTML5</h2>
+
+        <ul>
+            <li class="next">Новые элементы и атрибуты</li>
+            <li class="next">Изменённые элементы и атрибуты</li>
+            <li class="next">Удалённые элементы и атрибуты</li>
+        </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Устаревшие трибуты</h2>
+
+          <ul>
+              <li class="next"><code>border</code> для <code>img</code></li>
+              <li class="next"><code>summary</code> для <code>table</code></li>
+              <li class="next"><code>summary</code> для <code>table</code></li>
+          </ul>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Необязательные атрибуты</h2>
+
+          <pre>
+<code class="next">&lt;style <del>type="text/css"</del>&gt;&lt;/style&gt;</code>
+<code class="next">&lt;link <del>type="text/css"</del>
+    rel="stylesheet" href="style.css"&gt;</code>
+<code class="next">&lt;script <del>type="text/javascript"</del>&gt;&lt;/script&gt;</code>
+<code class="next">&lt;script type="text/template"&gt;&lt;/script&gt;</code>
+          </pre>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Новые атрибуты</h2>
+
+          <ul>
+              <li class="next"><code>download</code> для <code>a</code></li>
+              <li class="next"><code>charset</code> для <code>meta</code></li>
+              <li class="next"><code>autofocus</code> для <code>input</code>, <code>select</code>, <code>textarea</code> и <code>button</code></li>
+              <li class="next"><code>placeholder</code> для <code>input</code> и <code>textarea</code></li>
+              <li class="next"><code>scoped</code> для <code>style</code></li>
+              <li class="next"><code>async и defer</code> для <code>script</code></li>
+              <li class="next"><code>sizes</code> для <code>link</code></li>
+              <li class="next"><code>srcset</code> для <code>img</code></li>
+          </ul>
+      </div>
+  </section>
+
+  <section class="slide shout">
+      <div>
+          <h2><a href="http://www.w3.org/TR/html5-diff/#language" style="color: #FFF;">Полный список</a></h2>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Новые элементы</h2>
+
+          <ul>
+              <li>Структурные элементы</li>
+              <li class="next">video, audio, mark</li>
+              <li class="next">progress, meter, output</li>
+              <li class="next">canvas</li>
+              <li class="next">Элементы форм</li>
+          </ul>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Audio</h2>
+
+          <div>
+              <audio src="https://mdn.mozillademos.org/files/2587/AudioTest.ogg" controls="controls"></audio>
+          </div>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+        <pre>
+<code>
+&lt;audio
+    src="<mark>https://mdn.mozillademos.org/.../AudioTest.ogg</mark>"
+    controls&gt;
+    Ваш браузер не может играть музыку
+&lt;/audio&gt;
+</code>
+        </pre>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Атрибуты тега audio</h2>
+
+          <ul>
+              <li class="next">autoplay</li>
+              <li class="next">controls</li>
+              <li class="next">crossorigin</li>
+              <li class="next">loop</li>
+              <li class="next">muted</li>
+              <li class="next">preload (none, metadata, auto)</li>
+              <li class="next">src</li>
+              <li class="next">volume</li>
+          </ul>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Video</h2>
+
+          <video src="../pictures/lesson-3/making_of_yandex_auto_480x270.mp4"
+                 poster="../pictures/lesson-3/poster.png"
+                 controls></video>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <pre>
+<code>&lt;video id="video" autobuffer height="240" width="360"</code>
+<code>    <mark>poster</mark>="poster.png"&gt;</code>
+<code>    &lt;<mark>source</mark> src="movie.m4v"&gt;</code>
+<code>    &lt;source <mark>src</mark>="movie.webm" <mark>type</mark>="video/webm"&gt;</code>
+<code>    &lt;source src="movie.theora.ogv" type="video/ogg"&gt;</code>
+<code>    Ваш браузер не умеет играть видео</code>
+<code>&lt;/video&gt;</code>
+          </pre>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Кодеки для html5-видео</h2>
+
+          <ul class="next">
+              <li>Ogg/Theora</li>
+              <li>h.264</li>
+              <li>WebM</li>
+          </ul>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Атрибуты тега video</h2>
+
+          <ul>
+              <li class="next">autoplay</li>
+              <li class="next">controls</li>
+              <li class="next">crossorigin</li>
+              <li class="next">loop</li>
+              <li class="next">muted</li>
+              <li class="next">preload (none, metadata, auto)</li>
+              <li class="next">poster</li>
+          </ul>
+      </div>
+  </section>
+
+  <div class="progress"><div></div></div>
+
+  <script src="../shower/shower.min.js"></script>
+</body>
+</html>

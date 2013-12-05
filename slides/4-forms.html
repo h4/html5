@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Формы</title>
+  <meta name="viewport" content="width=792, user-scalable=no">
+  <link rel="stylesheet" href="../shower/themes/bright/styles/screen.css">
+</head>
+<body class="list">
+  <header class="caption">
+    <h1>Формы</h1>
+  </header>
+  <style scoped="scoped">
+    #Cover {
+      background: #FFF;
+    }
+
+    #Cover div {
+      left: 0;
+      right: 0;
+      width: auto;
+      margin: 2em;
+      box-sizing: border-box;
+      color: #000;
+    }
+  </style>
+  <section class="slide cover h" id="Cover">
+    <div>
+      <h2>Формы</h2>
+      <img src="../pictures/lesson-4/cover.png" alt="">
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Формы HTML5</h2>
+
+        <ul>
+            <li class="next">Новые элементы форм</li>
+            <li class="next">Новые типы полей ввода</li>
+            <li class="next">Новые атрибуты</li>
+        </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Тег form</h2>
+
+          <ul>
+              <li class="next">autocomplete</li>
+              <li class="next">novalidate</li>
+          </ul>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Валидация на клиенте</h2>
+
+          <ul>
+              <li class="next">required</li>
+              <li class="next">autocomplete</li>
+              <li class="next">pattern</li>
+          </ul>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <form action="">
+              <p><input type="text" required /></p>
+              <p><input type="text" pattern="[0-9][A-Z]{3}"/></p>
+              <p><input type="submit" value="Отправить"/></p>
+          </form>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <pre>
+<code>&lt;form action=""></code>
+<code>    &lt;p>&lt;input type="text" <mark>required</mark> />&lt;/p></code>
+<code>    &lt;p>&lt;input type="text" <mark>pattern</mark>="[0-9][A-Z]{3}"/>&lt;/p></code>
+<code>    &lt;p>&lt;input type="submit" value="Отправить"/>&lt;/p></code>
+<code>&lt;/form></code>
+          </pre>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Новые типы полей ввода</h2>
+
+          <ul>
+              <li class="next">tel</li>
+              <li class="next">search</li>
+              <li class="next">url</li>
+              <li class="next">email</li>
+              <li class="next">datetime</li>
+              <li class="next">date</li>
+              <li class="next">month</li>
+              <li class="next">week</li>
+          </ul>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Новые типы полей ввода</h2>
+
+          <ul>
+              <li class="next">time</li>
+              <li class="next">number</li>
+              <li class="next">range</li>
+              <li class="next">color</li>
+          </ul>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Поддержка браузерами</h2>
+
+          <ul>
+              <li class="next">Хром > FF > IE</li>
+              <li class="next">Фолбек в type="text"</li>
+              <li class="next">Сложность кастомизации</li>
+          </ul>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>placeholder</h2>
+
+          <ul>
+              <li class="next">Текст-подсказка</li>
+              <li class="next">Не заменяет label</li>
+          </ul>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <pre>
+<code>::-webkit-input-placeholder { /* WebKit browsers */</code>
+<code>    color:    #999;</code>
+<code>}</code>
+<code>:-moz-placeholder { /* Mozilla Firefox 4 to 18 */</code>
+<code>}</code>
+<code>::-moz-placeholder { /* Mozilla Firefox 19+ */</code>
+<code>}</code>
+<code>:-ms-input-placeholder { /* Internet Explorer 10+ */</code>
+<code>}</code>
+          </pre>
+      </div>
+  </section>
+
+  <div class="progress"><div></div></div>
+
+  <script src="../shower/shower.min.js"></script>
+</body>
+</html>
