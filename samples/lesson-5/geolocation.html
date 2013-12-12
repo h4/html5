@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Geolocation API Sample</title>
+  <style>
+    .result {
+      display: inline-block;
+      width: 400px;
+      padding: 3px;
+      background: #999;
+      border-radius: 4px;
+      color: #FFF;
+    }
+    .result span {
+      color: #0F0;
+    }
+  </style>
+</head>
+<body>
+<div>
+  <span class="result">Широта: <span id="lat">XX.XXX</span>, Долгота: <span id="lon">XX.XXX</span></span>
+  <button id="show">Где я?</button>
+</div>
+<br>
+<div>
+  <span class="result">Широта: <span id="ya-lat">XX.XXX</span>, Долгота: <span id="ya-lon">XX.XXX</span></span>
+  <button id="ya-show">Где Я?</button>
+</div>
+<script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU"></script>
+<script>
+  /**
+   *
+   * @param {Object} data
+   * @param {Object} data.coords
+   * @param {Number} data.coords.latitude
+   * @param {Number} data.coords.longitude
+   */
+  function successCallback(data) {
+    document.getElementById('lat').innerHTML = data.coords.latitude.toFixed(3);
+    document.getElementById('lon').innerHTML = data.coords.longitude.toFixed(3);
+  }
+  function buttonClickHandler() {
+    navigator.geolocation.getCurrentPosition(successCallback);
+  }
+  function yaSuccessCallback() {
+    document.getElementById('ya-lat').innerHTML = ymaps.geolocation.latitude.toFixed(3);
+    document.getElementById('ya-lon').innerHTML = ymaps.geolocation.longitude.toFixed(3);
+  }
+  function yaButtonClickHandler() {
+    navigator.geolocation.getCurrentPosition(yaSuccessCallback);
+  }
+  document.getElementById('show').addEventListener('click', buttonClickHandler);
+  document.getElementById('ya-show').addEventListener('click', yaButtonClickHandler);
+
+</script>
+</body>
+</html>
