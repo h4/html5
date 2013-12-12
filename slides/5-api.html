@@ -27,7 +27,7 @@
   <section class="slide cover h" id="Cover">
     <div>
       <h2>Geolocation и Storage</h2>
-      <img src="../pictures/lesson-4/cover.png" alt="">
+      <img src="../pictures/lesson-5/cover.png" alt="">
     </div>
   </section>
 
@@ -131,6 +131,91 @@
     <div>
       <p><a href="../samples/lesson-5/geolocation.html">Пример</a></p>
     </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Storage API</h2>
+
+          <ul>
+              <li class="next">Хранение больших объёмов</li>
+              <li class="next">Регулируемое время жизни</li>
+              <li class="next">Простой интерфейс</li>
+          </ul>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Недостатки Cookie</h2>
+
+          <ul>
+              <li class="next">Ограничение по объему</li>
+              <li class="next">Передаются на сервер с каждым запросом</li>
+          </ul>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Два Storage</h2>
+
+          <ul>
+              <li class="next">Local storage</li>
+              <li class="next">Session storage</li>
+          </ul>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Ограничения localStorage</h2>
+
+          <ul>
+              <li>2.5 MB Google Chrome</li>
+              <li>5 MB Mozilla Firefox, Opera</li>
+              <li>10 MB Internet Explorer</li>
+          </ul>
+
+          <p class="next">Цифры ориентировочный</p>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Проверка доступности</h2>
+
+<pre>
+<code>if (navigator.localStorage) {</code>
+<code>    // Код с использованием хранилища</code>
+<code>}</code>
+</pre>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Методы localStorage</h2>
+
+          <ul>
+              <li class="next">setItem(k, v)</li>
+              <li class="next">getItem(k)</li>
+              <li class="next">removeItem(k)</li>
+              <li class="next">clear()</li>
+          </ul>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Хранение сложных структур данных</h2>
+
+          <ul>
+              <li class="next">JSON.stringify()</li>
+              <li class="next">IndexedDB</li>
+              <li class="nextJSON.stringify">WebSQL</li>
+          </ul>
+      </div>
   </section>
 
   <div class="progress"><div></div></div>
