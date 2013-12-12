@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Geolocation и Storage</title>
+  <meta name="viewport" content="width=792, user-scalable=no">
+  <link rel="stylesheet" href="../shower/themes/bright/styles/screen.css">
+</head>
+<body class="list">
+  <header class="caption">
+    <h1>Geolocation и Storage</h1>
+  </header>
+  <style scoped="scoped">
+    #Cover {
+      background: #FFF;
+    }
+
+    #Cover div {
+      left: 0;
+      right: 0;
+      width: auto;
+      margin: 2em;
+      box-sizing: border-box;
+      color: #000;
+    }
+  </style>
+  <section class="slide cover h" id="Cover">
+    <div>
+      <h2>Geolocation и Storage</h2>
+      <img src="../pictures/lesson-4/cover.png" alt="">
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Geolocation API</h2>
+
+      <p><a href="http://isgeolocationpartofhtml5.com/">isgeolocationpartofhtml5</a></p>
+    </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Определение возможности Geolocation</h2>
+
+          <pre>
+<code>if (navigator.geolocation) {</code>
+<code>    // Код с использованием геолокации</code>
+<code>}</code>
+          </pre>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Поддержка браузерами</h2>
+
+          <ul>
+              <li class="next">IE >= 9</li>
+              <li class="next">Chrome</li>
+              <li class="next">FF</li>
+              <li class="next">Opera</li>
+              <li class="next">Android</li>
+              <li class="next">iOS</li>
+              <li class="next">все, кроме Opera Mini</li>
+          </ul>
+      </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Доступные методы</h2>
+
+      <ul>
+        <li class="next">getCurrentPosition()</li>
+        <li class="next">watchPosition()</li>
+        <li class="next">clearWatch()</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>getCurrentPosition()</h2>
+
+<pre>
+<code>navigator.geolocation.getCurrentPosition(</code>
+<code>  successCallback,</code>
+<code>  errorCallback,</code>
+<code>  params);</code>
+<code>function successCallback(geolocationData) {</code>
+<code>  // Операции</code>
+<code>}</code>
+</pre>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>geolocationData</h2>
+
+      <ul>
+        <li class="next">timestamp: 1386843483427</li>
+        <li class="next">coords:
+          <ul class="next">
+            <li>accuracy: 38</li>
+            <li>altitude: null</li>
+            <li>altitudeAccuracy: null</li>
+            <li>latitude: 59.95960349999999</li>
+            <li>longitude: 30.3263146</li>
+            <li>speed: null</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Geolocation Яндекс.Карт</h2>
+
+      <ul>
+        <li class="next">Работает везде</li>
+        <li class="next">Ниже точность</li>
+        <li class="next">Есть дополнительные данные (город)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide shout">
+    <div>
+      <p><a href="../samples/lesson-5/geolocation.html">Пример</a></p>
+    </div>
+  </section>
+
+  <div class="progress"><div></div></div>
+
+  <script src="../shower/shower.min.js"></script>
+</body>
+</html>
