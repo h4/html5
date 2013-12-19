@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS 3</title>
+  <meta name="viewport" content="width=792, user-scalable=no">
+  <link rel="stylesheet" href="../shower/themes/bright/styles/screen.css">
+</head>
+<body class="list">
+  <header class="caption">
+    <h1>CSS 3</h1>
+  </header>
+  <style scoped="scoped">
+    #Cover {
+      background: #FFF;
+    }
+
+    #Cover div {
+      left: 0;
+      right: 0;
+      width: auto;
+      margin: 2em;
+      box-sizing: border-box;
+      color: #000;
+    }
+  </style>
+  <section class="slide cover h" id="Cover">
+    <div>
+      <img src="../pictures/lesson-6/cover.svg" alt="">
+    </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Структура спецификации</h2>
+
+          <ul>
+              <li class="next">CSS1 - монолитная спецификация</li>
+              <li class="next">CSS2 - монолитная спецификация</li>
+              <li class="next">CSS3 - модульная структура</li>
+          </ul>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Структура спецификации</h2>
+
+          <p><a href="http://www.w3.org/TR/#tr_CSS">w3.org/TR/#tr_CSS</a></p>
+
+          <ul>
+              <li class="next">Selectors Level 3</li>
+              <li class="next">CSS Color level 3</li>
+              <li class="next">CSS text modes level 3</li>
+              <li class="next">Web animation 1.0</li>
+          </ul>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Статус спецификаций</h2>
+
+          <p><a href="http://www.w3.org/TR/#tr_CSS">w3.org/TR/#tr_CSS</a></p>
+
+          <ul>
+              <li class="next">Media Querises - Recomendation</li>
+              <li class="next">CSS Fonts Module Level 3 - Candidate Recomendation</li>
+              <li class="next">CSS Masking Module Level 1 - Last Call</li>
+              <li class="next">CSS Transforms Module Level 1 - Working draft</li>
+          </ul>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Статус спецификаций</h2>
+
+          <p>Recomendation и Candidate Recomendation можно использовать</p>
+          
+          <p class="next">Проверять на <a href="http://caniuse.com/">caniuse.com</a></p>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Определение поддержки браузером</h2>
+
+          <ul>
+              <li class="next">JS Feature Detection</li>
+              <li class="next">@supports</li>
+          </ul>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>JS Feature Detection</h2>
+
+          <pre>
+<code>if (document.createElement("detect").<mark>style</mark>.textShadow === "") {</code>
+<code>  document</code>
+<code>    .getElementsByTagName("html")[0]</code>
+<code>    .<mark>className</mark> += " textshadow";</code>
+<code>}</code>
+          </pre>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>JS Feature Detection</h2>
+          <pre>
+<code>.<mark>textshadow</mark> E {</code>
+<code>    text-shadow: 0 1px 1px #000;</code>
+<code>}</code>
+          </pre>
+          
+          <p class="next"><a href="http://modernizr.com/">modernizr.com</a></p>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Новые селекторы</h2>
+
+          <ul>
+              <li class="next">Селекторы атрибутов <span class="next">(3)</span></li>
+              <li class="next">Структурные селекторы псевдоклассов <span class="next">(10)</span></li>
+              <li class="next">Селекторы состояния UI <span class="next">(3)</span></li>
+              <li class="next">И ещё парочка</li>
+          </ul>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Селекторы атрибутов</h2>
+
+          <ul>
+              <li class="next">E[foo^="bar"]</li>
+              <li class="next">E[foo$="bar"]</li>
+              <li class="next">E[foo*="bar"]</li>
+          </ul>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Селекторы псевдоклассов</h2>
+
+          <ul>
+              <li class="next">E:root</li>
+              <li class="next">E:nth-child(n), E:nth-last-child(n)</li>
+              <li class="next">E:nth-of-type(n), E:nth-last-of-type(n)</li>
+              <li class="next">E:last-child</li>
+              <li class="next">E:first-of-type, E:last-of-type</li>
+              <li class="next">E:only-child, E:only-of-type</li>
+              <li class="next">E:empty</li>
+              <li class="next">E:not(s)</li>
+          </ul>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Селекторы псевдоклассов состояния UI</h2>
+
+          <ul>
+              <li class="next">E:target</li>
+              <li class="next">E:enabled</li>
+              <li class="next">E:disabled</li>
+              <li class="next">E:checked</li>
+          </ul>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Прочие селекторы</h2>
+
+          <ul>
+              <li class="next">E::before</li>
+              <li class="next">E ~ F</li>
+          </ul>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Адаптивная вёрстка</h2>
+
+          <pre>
+<code>&lt;link rel="stylesheet"</code>
+<code>    <mark>media="(max-width: 800px)"</mark> href="example.css" /></code>
+<code>&lt;style></code>
+<code>    <mark>@media (max-width: 800px) {</mark></code>
+<code>        ...</code>
+<code>    }</code>
+<code>&lt;/style></code>
+          </pre>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Анимации и трансформации</h2>
+
+          <ul>
+              <li class="next">transform</li>
+              <li class="next">transition</li>
+              <li class="next">animation</li>
+          </ul>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Transform</h2>
+
+          <ul>
+              <li class="next">rotate</li>
+              <li class="next">scale, scaleX, scaleY</li>
+              <li class="next">skew, skewX, skewY</li>
+              <li class="next">translate, translateX, translateY</li>
+              <li class="next">matrix</li>
+          </ul>
+
+          <ul class="next">
+              <li>transform-origin: </li>
+          </ul>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Transition</h2>
+
+          <ul>
+              <li class="next">transition-delay:</li>
+              <li class="next">transition-duration:</li>
+              <li class="next">transition-property:</li>
+              <li class="next">transition-timing-function:</li>
+          </ul>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Animation</h2>
+
+          <ul>
+              <li class="next">animation-name:</li>
+              <li class="next">animation-duration:</li>
+              <li class="next">animation-timing-function:</li>
+              <li class="next">animation-delay:</li>
+              <li class="next">animation-iteration-count:</li>
+              <li class="next">animation-direction:</li>
+              <li class="next">animation-fill-mode:</li>
+          </ul>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>@-keyframes</h2>
+
+          <pre>
+<code>@keyframes identifier {</code>
+<code>0% { top: 0; left: 0; }</code>
+<code>30% { top: 50px; }</code>
+<code>68%, 72% { left: 50px; }</code>
+<code>100% { top: 100px; left: 100%; }</code>
+<code>}</code>
+          </pre>
+      </div>
+  </section>
+
+  <section class="slide">&lt;
+      <div>
+          <h2>Веб-шрифты</h2>
+
+          <ul>
+              <li class="next">Форматы</li>
+              <li class="next">Подключение</li>
+          </ul>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Ленивая подгрузка</h2>
+
+<pre>
+    <code>&lt;script></code>
+    <code>  var h = document.getElementsByTagName('head')[0];</code>
+    <code>  var link = document.createElement('link');</code>
+    <code>  link.href = '/s/font.css';</code>
+    <code>  link.type = 'text/css';</code>
+    <code>  link.rel = 'stylesheet';</code>
+    <code>  h.appendChild(link);</code>
+    <code>&lt;/script></code>
+</pre>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Вендорные префиксы</h2>
+
+          <pre class="next">
+<code>-webkit-property:</code>
+<code>   -moz-property:</code>
+<code>    -ms-property:</code>
+<code>     -o-property:</code>
+<code>        property:</code>
+          </pre>
+      </div>
+  </section>
+
+  <section class="slide">
+      <div>
+          <h2>Вендорные префиксы</h2>
+
+          <ul>
+              <li class="next">SASS | LESS | Stylus</li>
+              <li class="next">Autoprefixer</li>
+          </ul>
+      </div>
+  </section>
+
+  <div class="progress"><div></div></div>
+
+  <script src="../shower/shower.min.js"></script>
+</body>
+</html>
